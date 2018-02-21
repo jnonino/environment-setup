@@ -21,3 +21,19 @@ rm -rf postman.tar.gz
 mv Postman /opt
 echo "export POSTMAN_HOME=/opt/Postman" >> /etc/profile.d/dev_tools.sh
 echo "export PATH=$PATH:$POSTMAN_HOME" >> /etc/profile.d/dev_tools.sh
+
+########################################################################################################################################
+### Node.js
+########################################################################################################################################
+NODEJS_VERSION=v9.5.0
+wget https://nodejs.org/dist/${NODEJS_VERSION}/node-${NODEJS_VERSION}-linux-x64.tar.xz
+tar -xJf node-${NODEJS_VERSION}-linux-x64.tar.xz -C /usr/local --strip-components=1
+rm node-${NODEJS_VERSION}-linux-x64.tar.xz
+
+########################################################################################################################################
+### Python
+########################################################################################################################################
+apt-get -y update
+apt-get -y upgrade
+apt-get install -y python2.7 python-pip
+apt-get install -y python3 python3-pip
