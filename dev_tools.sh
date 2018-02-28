@@ -9,7 +9,7 @@ tar -zxvf jdk-8u162-linux-x64.tar.gz
 rm -rf jdk-8u162-linux-x64.tar.gz
 mv jdk1.8.0_162 /opt/java
 echo "export JAVA_HOME=/opt/java" >> /etc/profile.d/dev_tools.sh
-echo "export PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/lib" >> /etc/profile.d/dev_tools.sh
+echo "export PATH=\$PATH:\$JAVA_HOME/bin:\$JAVA_HOME/lib" >> /etc/profile.d/dev_tools.sh
 
 ########################################################################################################################################
 ### Postman
@@ -20,7 +20,7 @@ tar -xzvf postman.tar.gz
 rm -rf postman.tar.gz
 mv Postman /opt
 echo "export POSTMAN_HOME=/opt/Postman" >> /etc/profile.d/dev_tools.sh
-echo "export PATH=$PATH:$POSTMAN_HOME" >> /etc/profile.d/dev_tools.sh
+echo "export PATH=\$PATH:\$POSTMAN_HOME" >> /etc/profile.d/dev_tools.sh
 
 ########################################################################################################################################
 ### Node.js

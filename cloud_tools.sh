@@ -5,13 +5,13 @@
 ### DOCKER
 ########################################################################################################################################
 # Install Docker
-apt-get remove docker docker-engine docker.io
-apt-get update
-apt-get install apt-transport-https ca-certificates curl software-properties-common
+apt-get -y remove docker docker-engine docker.io
+apt-get -y update
+apt-get install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-apt-get update
-apt-get install docker-ce
+apt-get -y update
+apt-get install -y docker-ce
 groupadd docker
 usermod -aG docker $USER
 chown "$USER":"$USER" /home/"$USER"/.docker -R
@@ -34,7 +34,7 @@ mkdir -p /opt/terraform
 mv terraform /opt/terraform/
 # Add to PATH variable
 echo "export TERRAFORM_HOME=/opt/terraform" >> /etc/profile.d/cloud_tools.sh
-echo "export PATH=$PATH:$TERRAFORM_HOME" >> /etc/profile.d/cloud_tools.sh
+echo "export PATH=\$PATH:\$TERRAFORM_HOME" >> /etc/profile.d/cloud_tools.sh
 
 ########################################################################################################################################
 ### Kubernetes
@@ -61,4 +61,4 @@ chmod +x kompose
 mv kompose /opt/kubernetes/
 # Add to PATH variable
 echo "export KUBERNETES_HOME=/opt/kubernetes" >> /etc/profile.d/cloud_tools.sh
-echo "export PATH=$PATH:$KUBERNETES_HOME" >> /etc/profile.d/cloud_tools.sh
+echo "export PATH=\$PATH:\$KUBERNETES_HOME" >> /etc/profile.d/cloud_tools.sh
