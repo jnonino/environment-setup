@@ -4,10 +4,10 @@
 ### Java
 ########################################################################################################################################
 echo "Installing Java JDK"
-wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/10+46/76eac37278c24557a3c4199677f19b62/jdk-10_linux-x64_bin.tar.gz
-tar -zxvf jdk-10_linux-x64_bin.tar.gz
-rm -rf jdk-10_linux-x64_bin.tar.gz
-mv jdk1.8.0_162 /opt/java
+wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.tar.gz
+tar -zxvf jdk-10.0.1_linux-x64_bin.tar.gz
+rm -rf jdk-10.0.1_linux-x64_bin.tar.gz
+mv jdk-10.0.1 /opt/java
 echo "export JAVA_HOME=/opt/java" >> /etc/profile.d/dev_tools.sh
 echo "export PATH=\$PATH:\$JAVA_HOME/bin:\$JAVA_HOME/lib" >> /etc/profile.d/dev_tools.sh
 
@@ -25,7 +25,7 @@ echo "export PATH=\$PATH:\$POSTMAN_HOME" >> /etc/profile.d/dev_tools.sh
 ########################################################################################################################################
 ### Node.js
 ########################################################################################################################################
-NODEJS_VERSION=v9.5.0
+NODEJS_VERSION=v10.1.0
 wget https://nodejs.org/dist/${NODEJS_VERSION}/node-${NODEJS_VERSION}-linux-x64.tar.xz
 tar -xJf node-${NODEJS_VERSION}-linux-x64.tar.xz -C /usr/local --strip-components=1
 rm node-${NODEJS_VERSION}-linux-x64.tar.xz
