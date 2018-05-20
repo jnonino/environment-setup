@@ -21,7 +21,7 @@ echo "export MAVEN_HOME=/opt/maven" >> /etc/profile.d/build_tools.sh
 echo "export PATH=\$PATH:\$MAVEN_HOME/bin:\$MAVEN_HOME/lib" >> /etc/profile.d/build_tools.sh
 
 # Install Gradle
-GRADLE_VERSION=4.6
+GRADLE_VERSION=4.7
 echo "Install Gradle" && \
 wget https://downloads.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip
 unzip gradle-$GRADLE_VERSION-bin.zip
