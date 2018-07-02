@@ -1,23 +1,24 @@
 #!/bin/bash
 
+mkdir /opt/kubernetes/
+
 # Install kubectl
-LATEST_VERSION=$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)
-KUBECTL_VERSION=v1.10.2
-echo "Installing kubectl"
-curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl
-chmod +x ./kubectl
-mkdir -p /opt/kubernetes
-mv kubectl /opt/kubernetes/
+apt-get update && sudo apt-get install -y apt-transport-https
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+touch /etc/apt/sources.list.d/kubernetes.list 
+echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | tee -a /etc/apt/sources.list.d/kubernetes.list
+apt-get update
+apt-get install -y kubectl
 
 # Install minikube
-MINIKUBE_VERSION=v0.27.0
+MINIKUBE_VERSION=v0.28.0
 echo "Installing minikube"
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/${MINIKUBE_VERSION}/minikube-linux-amd64
 chmod +x minikube
 mv minikube /opt/kubernetes/
 
 # Install kompose
-KOMPOSE_VERSION=v1.13.0
+KOMPOSE_VERSION=v1.14.0
 echo "Installing kompose"
 curl -L https://github.com/kubernetes/kompose/releases/download/${KOMPOSE_VERSION}/kompose-linux-amd64 -o kompose
 chmod +x kompose
