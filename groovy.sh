@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GROOVY_VERSION=2.5.0
+GROOVY_VERSION=2.5.2
 
 echo "Installing Groovy SDK"
 

@@ -11,14 +11,14 @@ apt-get update
 apt-get install -y kubectl
 
 # Install minikube
-MINIKUBE_VERSION=v0.28.0
+MINIKUBE_VERSION=v0.28.2
 echo "Installing minikube"
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/${MINIKUBE_VERSION}/minikube-linux-amd64
 chmod +x minikube
 mv minikube /opt/kubernetes/
 
 # Install kompose
-KOMPOSE_VERSION=v1.14.0
+KOMPOSE_VERSION=v1.16.0
 echo "Installing kompose"
 curl -L https://github.com/kubernetes/kompose/releases/download/${KOMPOSE_VERSION}/kompose-linux-amd64 -o kompose
 chmod +x kompose

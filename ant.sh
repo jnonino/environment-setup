@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ANT_VERSION=1.10.4
+ANT_VERSION=1.10.5
 
 echo "Installing Ant"
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GO_VERSION=1.10.3
+GO_VERSION=1.11
 
 echo "Install Go"
 
