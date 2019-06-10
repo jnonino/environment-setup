@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GRADLE_VERSION=4.10.2
+GRADLE_VERSION=5.4.1
 
 echo "Install Gradle"
 
