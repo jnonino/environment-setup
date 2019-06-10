@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MAVEN_VERSION=3.5.4
+MAVEN_VERSION=3.6.1
 
 echo "Install Maven"
 
