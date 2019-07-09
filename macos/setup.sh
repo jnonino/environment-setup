@@ -22,6 +22,7 @@ brew cask install firefox
 brew cask install slack
 brew cask install zoomus
 brew cask install visual-studio-code
+brew cask install sublime-text
 brew install curl
 brew install wget
 
