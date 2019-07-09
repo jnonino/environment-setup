@@ -4,21 +4,53 @@
 cd /usr/local
 mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
 
-tap "homebrew/core"
-tap "homebrew/bundle"
-tap "homebrew/services"
-tap "caskroom/cask"
+brew tap homebrew/core
+brew tap homebrew/bundle
+brew tap homebrew/services
+brew tap caskroom/cask
+brew tap cloudfoundry/tap
 
-brew "curl"
-brew "git"
-brew "wget"
-brew "awscli"
-brew "go"
-brew "terraform"
-brew "python"
+# Upgrade all packages
 
-cask "google-chrome"
-cask "slack"
-cask "visual-studio-code"
-cask "zoomus"
-cask "docker"
+brew update
+brew upgrade
+Brew cask upgrade
+
+# Install Common Tools
+brew cask install google-chrome 
+brew cask install firefox
+brew cask install slack
+brew cask install zoomus
+brew cask install visual-studio-code
+brew install curl
+brew install wget
+
+# Install VCS Tools
+brew install git
+brew install git-crypt
+
+# Install Programming Languages and DevTools
+brew cask install java
+brew install ant
+brew install maven
+brew install gradle
+brew install python
+brew install go
+brew install node
+brew cask install fly
+brew cask install postman
+
+# Install Cloud and Virtualisation Tools
+brew cask install docker
+brew install terraform
+brew install kubernetes-cli
+brew install kubernetes-helm
+brew cask install minikube
+brew install awscli
+brew cask install google-cloud-sdk
+brew install cf-cli
+brew cask install vagrant
+brew cask install virtualbox
+
+# Clean up Brew
+brew cleanup
