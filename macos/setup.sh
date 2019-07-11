@@ -47,6 +47,8 @@ brew cask install docker
 brew install terraform
 brew install kubernetes-cli
 brew install kubernetes-helm
+rm /usr/local/bin/kubectl
+brew link --overwrite kubernetes-cli
 brew cask install minikube
 brew install awscli
 brew cask install google-cloud-sdk
