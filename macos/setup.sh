@@ -30,6 +30,7 @@ brew install wget
 brew install git
 brew install git-crypt
 brew install git-lfs
+brew cask install github
 
 # Install Programming Languages and DevTools
 brew cask install java
