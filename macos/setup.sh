@@ -40,6 +40,12 @@ brew install gradle
 brew install python
 brew install go
 brew install node
+brew install ruby rbenv ruby-build
+rbenv install 2.6.3
+rbenv global 2.6.3
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+source ~/.bash_profile
+gem install rails
 brew cask install fly
 brew cask install postman
 
