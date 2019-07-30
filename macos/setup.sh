@@ -65,5 +65,9 @@ brew install cf-cli
 brew cask install vagrant
 brew cask install virtualbox
 
+# Databases
+brew cask install db-browser-for-sqlite
+brew cask install pgadmin4
+
 # Clean up Brew
 brew cleanup
