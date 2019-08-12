@@ -52,6 +52,7 @@ brew cask install postman
 # Install Cloud and Virtualisation Tools
 brew cask install docker
 brew install terraform
+brew install terragrunt
 brew install kubernetes-cli
 brew install kubernetes-helm
 rm /usr/local/bin/kubectl
