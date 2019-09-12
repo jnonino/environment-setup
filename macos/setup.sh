@@ -25,6 +25,7 @@ brew cask install visual-studio-code
 brew cask install sublime-text
 brew install curl
 brew install wget
+brew install direnv
 
 # Install VCS Tools
 brew install git
