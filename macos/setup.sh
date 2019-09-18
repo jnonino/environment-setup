@@ -26,6 +26,7 @@ brew cask install sublime-text
 brew install curl
 brew install wget
 brew install direnv
+brew install zsh
 
 # Install VCS Tools
 brew install git
