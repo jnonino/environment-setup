@@ -96,6 +96,8 @@ brew install zsh-completions
 echo 'fpath=(/usr/local/share/zsh-completions $fpath)' >> ~/.zshrc
 rm -f ~/.zcompdump; compinit
 chmod go-w '/usr/local/share'
+brew install zsh-history-substring-search
+echo 'source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh' >> ~/.zshrc
 
 #plugins=(colored-man-pages osx brew dotenv git vscode terraform python pip pipenv autopep8 pylint node npm aws docker docker-compose minikube kubectl kops helm)
 
