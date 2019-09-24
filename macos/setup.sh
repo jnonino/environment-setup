@@ -25,8 +25,6 @@ brew cask install visual-studio-code
 brew cask install sublime-text
 brew install curl
 brew install wget
-brew install direnv
-brew install zsh
 
 # Install VCS Tools
 brew install git
@@ -71,6 +69,28 @@ brew cask install virtualbox
 # Databases
 brew cask install db-browser-for-sqlite
 brew cask install pgadmin4
+
+# Setup Zsh
+brew install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s $(which zsh)
+brew install zsh-syntax-highlighting
+echo 'source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
+brew install direnv
+echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
+brew install warrensbox/tap/tfswitch
+echo 'autoload -U add-zsh-hook' >> ~/.zshrc
+echo '' >> ~/.zshrc
+echo 'load-tfswitch() {' >> ~/.zshrc
+echo '  local tfswitchrc_path=".tfswitchrc"' >> ~/.zshrc
+echo '  if [ -f "$tfswitchrc_path" ]; then' >> ~/.zshrc
+echo '    tfswitch' >> ~/.zshrc
+echo '  fi' >> ~/.zshrc
+echo '}' >> ~/.zshrc
+echo 'add-zsh-hook chpwd load-tfswitch' >> ~/.zshrc
+echo 'load-tfswitch' >> ~/.zshrc
+
+#plugins=(colored-man-pages osx brew dotenv git vscode terraform python pip pipenv autopep8 pylint node npm aws docker docker-compose minikube kubectl kops helm)
 
 # Clean up Brew
 brew cleanup
