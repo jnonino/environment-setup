@@ -21,6 +21,7 @@ brew cask install google-chrome
 brew cask install firefox
 brew cask install slack
 brew cask install zoomus
+brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
 brew cask install sublime-text
 brew install curl
@@ -49,7 +50,7 @@ gem install rails
 brew cask install fly
 brew cask install postman
 
-# Install Cloud and Virtualisation Tools
+# Install Cloud and Virtualization Tools
 brew cask install docker
 brew install terraform
 brew install terragrunt
@@ -89,6 +90,12 @@ echo '  fi' >> ~/.zshrc
 echo '}' >> ~/.zshrc
 echo 'add-zsh-hook chpwd load-tfswitch' >> ~/.zshrc
 echo 'load-tfswitch' >> ~/.zshrc
+brew install zsh-autosuggestions
+echo 'source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
+brew install zsh-completions
+echo 'fpath=(/usr/local/share/zsh-completions $fpath)' >> ~/.zshrc
+rm -f ~/.zcompdump; compinit
+chmod go-w '/usr/local/share'
 
 #plugins=(colored-man-pages osx brew dotenv git vscode terraform python pip pipenv autopep8 pylint node npm aws docker docker-compose minikube kubectl kops helm)
 
