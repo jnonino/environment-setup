@@ -112,7 +112,7 @@ echo 'setopt hist_ignore_space      # Ignore commands that start with space' >> 
 echo 'setopt hist_verify            # Show command with history expansion to user before running it' >> ~/.zshrc
 echo 'setopt inc_append_history     # Add commands to HISTFILE in order of execution' >> ~/.zshrc
 echo 'setopt share_history          # Share command history data' >> ~/.zshrc
-
+echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc 
 #plugins=(colored-man-pages osx brew dotenv git vscode terraform python pip pipenv autopep8 pylint node npm aws docker docker-compose minikube kubectl kops helm)
 
 # Clean up Brew
