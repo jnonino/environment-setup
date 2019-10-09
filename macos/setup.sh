@@ -7,7 +7,7 @@ mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar 
 brew tap homebrew/core
 brew tap homebrew/bundle
 brew tap homebrew/services
-brew tap caskroom/cask
+brew tap homebrew/cask
 brew tap cloudfoundry/tap
 
 # Upgrade all packages
