@@ -126,7 +126,7 @@ brew install kubernetes-cli
 brew install kubernetes-helm
 rm /usr/local/bin/kubectl
 brew link --overwrite kubernetes-cli
-brew cask install minikube
+brew install minikube
 brew install kops
 brew install kubeless
 echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc
