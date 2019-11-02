@@ -82,6 +82,7 @@ brew install pyenv
 pyenv install $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
 echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+pip install --upgrade pip
 
 # Ant
 brew install ant
