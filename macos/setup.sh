@@ -77,7 +77,11 @@ brew cask install github
 brew cask install java
 
 # Python
-brew install python
+PYTHON_VERSION=3.8.0
+brew install pyenv
+pyenv install $PYTHON_VERSION
+pyenv global $PYTHON_VERSION
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
 
 # Ant
 brew install ant
