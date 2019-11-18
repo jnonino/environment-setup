@@ -128,7 +128,7 @@ brew cask install docker
 
 # Kubernetes
 brew install kubernetes-cli
-brew install kubernetes-helm
+brew install helm
 rm /usr/local/bin/kubectl
 brew link --overwrite kubernetes-cli
 brew install minikube
