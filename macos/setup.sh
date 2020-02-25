@@ -8,7 +8,6 @@ brew tap homebrew/core
 brew tap homebrew/bundle
 brew tap homebrew/services
 brew tap homebrew/cask
-brew tap cloudfoundry/tap
 
 # Upgrade all packages
 brew update
@@ -77,7 +76,7 @@ brew cask install github
 brew cask install java
 
 # Python
-PYTHON_VERSION=3.8.0
+PYTHON_VERSION=3.8.1
 brew install pyenv
 pyenv install $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
@@ -100,12 +99,13 @@ brew install go
 brew install node
 
 # Ruby
+RUBY_VERSION=2.7.0
 brew install ruby rbenv ruby-build
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshenv
 echo 'source $HOME/.zshenv' >> ~/.zshrc
 echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
-rbenv install 2.6.5
-rbenv global 2.6.5
+rbenv install $RUBY_VERSION
+rbenv global $RUBY_VERSION
 gem install rails
 
 # Terraform
@@ -141,9 +141,6 @@ brew install awscli
 
 # Google Cloud Platform
 brew cask install google-cloud-sdk
-
-# Cloudfoundry
-brew install cf-cli
 
 # Virtualbox
 brew cask install virtualbox
