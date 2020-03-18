@@ -1,0 +1,10 @@
+choco install terraform
+choco install nodejs
+choco install python
+choco install postman
+choco install notepadplusplus
+choco install git
+choco install awscli
+choco install adobereader
+choco install zoom
+choco install gr
