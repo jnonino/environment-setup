@@ -8,6 +8,7 @@ choco install -y maven
 
 choco install -y postman
 
+choco install -y vscode
 choco install -y jetbrainstoolbox
 choco install -y notepadplusplus
 
