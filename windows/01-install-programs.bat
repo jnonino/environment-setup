@@ -16,7 +16,12 @@ choco install -y git
 choco install -y git-lfs.install
 
 choco install -y terraform
+choco install -y docker-desktop
 choco install -y awscli
+choco install -y kubernetes-cli
+choco install -y minikube
+choco install -y kubernetes-kops
+choco install -y kubernetes-helm
 
 choco install -y adobereader
 choco install -y firefox
@@ -24,3 +29,5 @@ choco install -y zoom
 choco install -y virtualbox
 
 
+choco upgrade chocolatey
+choco upgrade all
