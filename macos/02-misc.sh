@@ -20,6 +20,9 @@ brew install wget
 # Postman
 brew cask install postman
 
+# LaTeX
+brew cask install mactex
+
 # Clean up Brew
 brew cleanup
 
