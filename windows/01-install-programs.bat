@@ -25,6 +25,7 @@ choco install -y kubernetes-helm
 
 choco install -y adobereader
 choco install -y firefox
+choco install -y slack
 choco install -y zoom
 choco install -y virtualbox
 
