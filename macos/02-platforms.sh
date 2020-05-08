@@ -5,9 +5,6 @@ brew cask install docker
 
 # Kubernetes
 brew install kubernetes-cli
-rm /usr/local/bin/kubectl
-brew link --overwrite kubernetes-cli
-echo "if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc
 
 # Helm
 brew install helm
@@ -26,6 +23,8 @@ brew install awscli
 
 # Google Cloud Platform SDK
 brew cask install google-cloud-sdk
+echo "source \"/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc\"" >> ~/.zshrc
+echo "source \"/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc\"" >> ~/.zshrc
 
 # Virtualbox
 brew cask install virtualbox
