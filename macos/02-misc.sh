@@ -7,6 +7,9 @@ brew install coreutils
 brew install direnv
 echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
 
+# Microsoft Edge
+brew cask install microsoft-edge
+
 # Google Chrome
 brew cask install google-chrome
 
