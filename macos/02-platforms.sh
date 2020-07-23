@@ -5,6 +5,7 @@ brew cask install docker
 
 # Kubernetes
 brew install kubernetes-cli
+echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # add autocomplete permanently to your zsh shell
 
 # Helm
 brew install helm
