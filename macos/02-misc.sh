@@ -26,6 +26,9 @@ brew cask install postman
 # LaTeX
 brew cask install mactex
 
+# Mendeley Reference Manager
+brew cask install mendeley-reference-manager
+
 # Clean up Brew
 brew cleanup
 
