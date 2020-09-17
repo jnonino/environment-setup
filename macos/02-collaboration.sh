@@ -6,6 +6,9 @@ brew install git
 # Git LFS
 brew install git-lfs
 
+# Install GitHub CLI
+brew install gh
+
 # Git Crypt
 brew install git-crypt
 
