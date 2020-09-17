@@ -20,7 +20,7 @@ brew install node
 brew install go
 
 # Java
-brew cask install java
+brew install openjdk
 
 # Ant
 brew install ant
