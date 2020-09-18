@@ -8,6 +8,7 @@ brew install git-lfs
 
 # Install GitHub CLI
 brew install gh
+gh config set git_protocol ssh
 
 # Git Crypt
 brew install git-crypt
