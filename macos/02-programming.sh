@@ -21,6 +21,8 @@ brew install go
 
 # Java
 brew install openjdk
+echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+echo 'export CPPFLAGS="-I/usr/local/opt/openjdk/include"' >> ~/.zshrc
 
 # Ant
 brew install ant
