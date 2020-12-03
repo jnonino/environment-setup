@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-# Terraform
-brew install terraform
-
-# Terragrunt
-brew install terragrunt
-
 # TF Switch
 brew install warrensbox/tap/tfswitch
 echo 'autoload -U add-zsh-hook' >> ~/.zshrc
