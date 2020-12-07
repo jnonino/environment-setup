@@ -16,7 +16,7 @@ echo 'source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/
 # Install Zsh Completitions
 brew install zsh-completions
 echo 'if type brew &>/dev/null; then' >> ~/.zshrc
-echo '  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH' >> ~/.zshrc
+echo '  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH >> ~/.zshrc
 echo '  autoload -Uz compinit' >> ~/.zshrc
 echo '  compinit' >> ~/.zshrc
 echo 'fi' >> ~/.zshrc
