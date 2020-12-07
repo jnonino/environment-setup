@@ -22,7 +22,7 @@ echo '  compinit' >> ~/.zshrc
 echo 'fi' >> ~/.zshrc
 
 rm -f ~/.zcompdump; compinit
-chmod go-w '/usr/local/share'
+chmod -R go-w "$(brew --prefix)/share"
 
 # Install Zsh History Substring Search
 brew install zsh-history-substring-search
