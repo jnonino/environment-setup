@@ -6,11 +6,13 @@ brew cask install visual-studio-code
 brew cask install sublime-text
 
 # Python
-PYTHON_VERSION=3.8.1
+PYTHON_VERSION=3.9.5
 brew install pyenv
 pyenv install $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+echo -e 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo -e 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo -e 'eval "$(pyenv init --path)"' >> ~/.zshrc
 pip install --upgrade pip
 
 # Node.js
