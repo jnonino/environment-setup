@@ -13,6 +13,9 @@ gh config set git_protocol ssh
 # Git Crypt
 brew install git-crypt
 
+# Git pre-commit
+brew install pre-commit
+
 # Slack
 brew cask install slack
 
