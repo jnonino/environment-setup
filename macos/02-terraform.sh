@@ -13,6 +13,9 @@ echo '}' >> ~/.zshrc
 echo 'add-zsh-hook chpwd load-tfswitch' >> ~/.zshrc
 echo 'load-tfswitch' >> ~/.zshrc
 
+# Install Terraform Docs
+brew install terraform-docs
+
 # Clean up Brew
 brew cleanup
 
