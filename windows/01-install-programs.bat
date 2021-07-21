@@ -16,6 +16,8 @@ choco install -y git
 choco install -y git-lfs.install
 
 choco install -y terraform
+choco install -y terraform-docs
+choco install -y tfsec
 choco install -y docker-desktop
 choco install -y awscli
 choco install -y kubernetes-cli
