@@ -4,6 +4,7 @@ choco install -y python
 choco install -y openjdk
 choco install -y gradle
 choco install -y maven
+choco install -y golang
 
 
 choco install -y postman
