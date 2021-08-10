@@ -6,7 +6,6 @@ choco install -y gradle
 choco install -y maven
 choco install -y golang
 
-
 choco install -y postman
 
 choco install -y vscode
@@ -32,6 +31,7 @@ choco install -y slack
 choco install -y zoom
 choco install -y virtualbox
 
+choco install -y mongodb-compass
 
 choco upgrade chocolatey
 choco upgrade all
