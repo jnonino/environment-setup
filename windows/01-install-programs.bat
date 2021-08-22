@@ -1,5 +1,5 @@
 
-choco install -y nodejs
+choco install -y nvm
 choco install -y python
 choco install -y openjdk
 choco install -y gradle
