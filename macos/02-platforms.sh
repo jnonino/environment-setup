@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Docker
-brew cask install docker
+brew install --cask docker
 
 # Kubernetes
 brew install kubernetes-cli
