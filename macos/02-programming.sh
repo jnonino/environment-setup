@@ -1,27 +1,27 @@
 #!/usr/bin/env bash
 
 # IDEs
-brew cask install jetbrains-toolbox
-brew cask install visual-studio-code
-brew cask install sublime-text
+brew install --cask jetbrains-toolbox
+brew install --cask visual-studio-code
+brew install --cask sublime-text
 
 # Python
-PYTHON_VERSION=3.9.5
+PYTHON_VERSION=3.10.0
 brew install pyenv
 pyenv install $PYTHON_VERSION
 pyenv global $PYTHON_VERSION
 echo -e 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo -e 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo -e 'eval "$(pyenv init --path)"' >> ~/.zshrc
+source ~/.zshrc
 pip install --upgrade pip
 
 # Node.js
-brew install node
 brew install nvm
 mkdir ~/.nvm
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshenv
-echo '[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"' >> ~/.zshenv
-echo '[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshenv
+echo '[ -s "/usr/local/homebrew/opt/nvm/nvm.sh" ] && . "/usr/local/homebrew/opt/nvm/nvm.sh"' >> ~/.zshenv    # This loads nvm
+echo '[ -s "/usr/local/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/homebrew/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshenv # This loads nvm bash_completion
 
 # Go
 brew install go
