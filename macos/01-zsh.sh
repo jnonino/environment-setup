@@ -4,6 +4,10 @@
 brew install zsh
 chsh -s $(which zsh)
 
+echo 'eval "$(homebrew/bin/brew shellenv)"' >> ~/.zshrc
+echo 'brew update --force --quiet' >> ~/.zshrc
+echo 'chmod -R go-w "$(brew --prefix)/share/zsh"' >> ~/.zshrc
+
 # Install Oh My Zsh
 # https://ohmyz.sh/
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
