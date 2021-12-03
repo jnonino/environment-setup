@@ -2,31 +2,34 @@
 
 # Install Zsh
 brew install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s $(which zsh)
 
+# Install Oh My Zsh
+# https://ohmyz.sh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Install Zsh Syntax Highlighting
+# https://github.com/zsh-users/zsh-syntax-highlighting
 brew install zsh-syntax-highlighting
-echo 'source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
+echo 'source /usr/local/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
 
 # Install Zsh Auto Suggestions
 brew install zsh-autosuggestions
-echo 'source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
+echo 'source /usr/local/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
 
 # Install Zsh Completitions
 brew install zsh-completions
 echo 'if type brew &>/dev/null; then' >> ~/.zshrc
-echo '  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH >> ~/.zshrc
+echo '  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH' >> ~/.zshrc
 echo '  autoload -Uz compinit' >> ~/.zshrc
 echo '  compinit' >> ~/.zshrc
 echo 'fi' >> ~/.zshrc
 
 rm -f ~/.zcompdump; compinit
-chmod -R go-w "$(brew --prefix)/share"
 
 # Install Zsh History Substring Search
 brew install zsh-history-substring-search
-echo 'source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh' >> ~/.zshrc
+echo 'source /usr/local/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh' >> ~/.zshrc
 
 # Configure Zsh
 echo 'HISTFILE="$HOME/.zsh_history"' >> ~/.zshrc
