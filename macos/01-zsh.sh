@@ -4,7 +4,7 @@
 brew install zsh
 chsh -s $(which zsh)
 
-echo 'eval "$(homebrew/bin/brew shellenv)"' >> ~/.zshrc
+echo 'eval "$(/usr/local/homebrew/bin/brew shellenv)"' >> ~/.zshrc
 echo 'brew update --force --quiet' >> ~/.zshrc
 echo 'chmod -R go-w "$(brew --prefix)/share/zsh"' >> ~/.zshrc
 
