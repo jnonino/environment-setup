@@ -17,8 +17,10 @@ brew cask install google-chrome
 brew cask install firefox
 
 # cURL and Wget
-brew install curl
-brew install wget
+brew install curl wget
+echo 'export PATH="/usr/local/homebrew/opt/curl/bin:$PATH"' >> ~/.zshrc
+echo 'export LDFLAGS="-L/usr/local/homebrew/opt/curl/lib"' >> ~/.zshrc
+echo 'export CPPFLAGS="-I/usr/local/homebrew/opt/curl/include"' >> ~/.zshrc
 
 # Postman
 brew cask install postman
