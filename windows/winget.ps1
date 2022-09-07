@@ -4,7 +4,6 @@
 #   powershell -ExecutionPolicy Bypass -File .\winget.ps1
 
 $apps = @(
-  'ActiveState.ActivePerl'
   'Amazon.AWSCLI'
   'ChristianSchenk.MiKTeX'
   'Docker.DockerDesktop'
@@ -22,6 +21,7 @@ $apps = @(
   'Postman.Postman'
   'Python.Python.3.10'
   'RedHat.Podman'
+  'StrawberryPerl.StrawberryPerl'
 )
 
 $apps | ForEach-Object {
