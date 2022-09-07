@@ -4,6 +4,7 @@
 #   powershell -ExecutionPolicy Bypass -File .\winget.ps1
 
 $apps = @(
+  'ActiveState.ActivePerl'
   'Amazon.AWSCLI'
   'ChristianSchenk.MiKTeX'
   'Docker.DockerDesktop'
