@@ -5,6 +5,7 @@
 
 $apps = @(
   'Amazon.AWSCLI'
+  'ChristianSchenk.MiKTeX'
   'Docker.DockerDesktop'
   'Git.Git'
   'GitHub.cli'
