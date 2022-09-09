@@ -1,5 +1,6 @@
 # Windows Package Manager
 #   https://docs.microsoft.com/en-us/windows/package-manager/
+#   https://winget.run/
 # How to Run:
 #   powershell -ExecutionPolicy Bypass -File .\winget.ps1
 
