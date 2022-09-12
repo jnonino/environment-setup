@@ -45,6 +45,7 @@ $apps = @(
   'Spotify.Spotify'
   'StrawberryPerl.StrawberryPerl'
   'Valve.Steam'
+  'WhatsApp.WhatsApp'
   'Zoom.Zoom'
   'Zoom.Zoom.OutlookPlugin'
 )
