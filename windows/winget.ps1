@@ -5,6 +5,7 @@
 #   powershell -ExecutionPolicy Bypass -File .\winget.ps1
 
 $apps = @(
+  'AgileBits.1Password'
   'Amazon.AWSCLI'
   'Amazon.Kindle'
   'Amazon.SendToKindle'
@@ -46,6 +47,7 @@ $apps = @(
   'SlackTechnologies.Slack'
   'Spotify.Spotify'
   'StrawberryPerl.StrawberryPerl'
+  'Twilio.Authy'
   'Valve.Steam'
   'WhatsApp.WhatsApp'
   'Zoom.Zoom'
