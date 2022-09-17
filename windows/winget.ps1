@@ -11,7 +11,6 @@ $apps = @(
   'Amazon.SendToKindle'
   'Canonical.Ubuntu'
   'ChristianSchenk.MiKTeX'
-  'Dell.CommandUpdate'
   'Docker.DockerDesktop'
   'Git.Git'
   'GitHub.cli'
@@ -57,7 +56,7 @@ $apps = @(
 $apps | ForEach-Object {
   $Vendor, $App = $_.Split(".")
 
-  winget list --id $_ | Out-Null
+  winget list --exact --id $_ | Out-Null
   if ($LASTEXITCODE -eq 0) {
     Write-Output "$App from $Vendor is already installed"
   } else {
