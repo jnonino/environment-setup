@@ -36,6 +36,7 @@ $apps = @(
   'Microsoft.VisualStudioCode'
   'Microsoft.WindowsTerminal'
   'Mozilla.Firefox'
+  'msys2.msys2'
   'Notepad++.Notepad++'
   'OpenJS.NodeJS'
   'Oracle.JDK.17'
