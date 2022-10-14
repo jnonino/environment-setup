@@ -5,6 +5,7 @@
 #   powershell -ExecutionPolicy Bypass -File .\winget.ps1
 
 $apps = @(
+  '2BrightSparks.SyncBackFree'
   'AgileBits.1Password'
   'Amazon.AWSCLI'
   'Amazon.Kindle'
