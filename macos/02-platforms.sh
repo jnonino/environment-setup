@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
 # Docker
-brew install --cask docker
+# brew install --cask docker
+
+# Podman
+brew install podman podman-compose
+brew install --cask podman-desktop
 
 # Kubernetes
 brew install kubernetes-cli
@@ -28,10 +32,10 @@ echo "source \"/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path
 echo "source \"/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc\"" >> ~/.zshrc
 
 # Virtualbox
-brew cask install virtualbox
+# brew cask install virtualbox
 
 # Vagrant
-brew cask install vagrant
+# brew cask install vagrant
 
 # Clean up Brew
 brew cleanup
