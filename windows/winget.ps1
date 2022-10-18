@@ -44,6 +44,7 @@ $apps = @(
   'Postman.Postman'
   'Python.Python.3'
   'RedHat.Podman'
+  'RedHat.Podman-Desktop'
   'RubyInstallerTeam.Ruby.3.1'
   'SlackTechnologies.Slack'
   'Spotify.Spotify'
