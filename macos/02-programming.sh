@@ -40,7 +40,7 @@ brew install maven
 brew install gradle
 
 # Ruby
-RUBY_VERSION=2.7.0
+RUBY_VERSION=3.1.2
 brew install ruby rbenv ruby-build
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshenv
 echo 'source $HOME/.zshenv' >> ~/.zshrc
