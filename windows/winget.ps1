@@ -42,7 +42,7 @@ $apps = @(
   'OpenJS.NodeJS'
   'Oracle.JDK.17'
   'Postman.Postman'
-  'Python.Python.3'
+  'Python.Python.3.12'
   'RubyInstallerTeam.Ruby.3.1'
   'SlackTechnologies.Slack'
   'Spotify.Spotify'
