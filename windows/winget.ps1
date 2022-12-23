@@ -46,6 +46,7 @@ $apps = @(
   'RubyInstallerTeam.Ruby.3.1'
   'SlackTechnologies.Slack'
   'Spotify.Spotify'
+  'Starship.Starship'
   'StrawberryPerl.StrawberryPerl'
   'suse.RancherDesktop'
   'Twilio.Authy'
