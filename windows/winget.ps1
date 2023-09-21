@@ -23,6 +23,7 @@ $apps = @(
   'Google.Chrome'
   'Google.CloudSDK'
   'Google.Drive'
+  'Hashicorp.Terraform'
   'JetBrains.Toolbox'
   'Kubernetes.minikube'
   'Kubernetes.kubectl'
