@@ -15,6 +15,7 @@ $apps = @(
   'GitHub.cli'
   'GitHub.GitLFS'
   'Hashicorp.Terraform'
+  'IDRIX.VeraCrypt'
   'Microsoft.Edge'
   'Microsoft.EdgeWebView2Runtime'
   'Microsoft.MouseandKeyboardCenter'
@@ -34,6 +35,7 @@ $apps = @(
   'WhatsApp.WhatsApp'
   'Zoom.Zoom'
   'Zoom.ZoomOutlookPlugin'
+  
 
   
 
