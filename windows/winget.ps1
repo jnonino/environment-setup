@@ -14,6 +14,7 @@ $apps = @(
   'Git.Git'
   'GitHub.cli'
   'GitHub.GitLFS'
+  'Google.Drive'
   'Hashicorp.Terraform'
   'IDRIX.VeraCrypt'
   'Microsoft.Edge'
