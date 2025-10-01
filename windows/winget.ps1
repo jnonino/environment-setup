@@ -37,7 +37,7 @@ $apps = @(
   'Zoom.Zoom'
   'Zoom.ZoomOutlookPlugin'
   
-
+  "Task.Task"
   
 
   
@@ -69,3 +69,4 @@ $apps | ForEach-Object {
     }
   }
 }
+
